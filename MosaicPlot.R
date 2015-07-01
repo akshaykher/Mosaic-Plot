@@ -12,7 +12,7 @@ EyeColor = c("Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","B
 # Height => A=<90cm, B=90-140cm, C=>140cm
 Height = c("A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C")
 
-#Creating Data Set Categorical Variables using rep
+#Creating Data Set Categorical Variables using rep/simulating data in r
 Sex <- c(rep("F",2),rep("M",2))
 Sex <- rep(Sex,24)
 Survived <- c(rep("1",48),rep("0",48))
