@@ -1,3 +1,4 @@
+library("vcd")
 #Creating Data Set Variables
 # Sex => M = Male, F=Female
 Sex=c("F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M")
