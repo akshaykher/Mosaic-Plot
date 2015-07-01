@@ -35,4 +35,7 @@ data <- structable(mytable)
 #Mosaic plot
 mosaic(data, shade=T, colorize = T, gp = gpar(fill=matrix(c("red","yellow", "green"))),main="Mosaic Plot 5 Variables",sub="Red = High Attention | Yellow = Moderate Attention |  Green = Ignore")
 
+#Save the plot in a png file
+dev.copy(png,file="MosaicPlot.png")
+dev.off()
 
