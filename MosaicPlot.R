@@ -1,5 +1,6 @@
 library("vcd")
-#Creating Data Set Variables
+#Creating Data Set Categorical Variables manually
+
 # Sex => M = Male, F=Female
 Sex=c("F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M")
 # Survived  => Survived = 1, Did not Survive = 0
@@ -10,6 +11,17 @@ Age=c("<20","<20","<20","<20","<20","<20","<20","<20","<20","<20","<20","<20",">
 EyeColor = c("Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br")
 # Height => A=<90cm, B=90-140cm, C=>140cm
 Height = c("A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C")
+
+#Creating Data Set Categorical Variables using rep
+Sex <- c(rep("F",2),rep("M",2))
+Sex <- rep(Sex,24)
+Survived <- c(rep("1",48),rep("0",48))
+Age <- c(rep("<20",12),rep(">60",12),rep("20-40",12),rep("40-60",12))
+Age <- rep(Age,2)
+EyeColor <- c("Bl","Br")
+EyeColor <- rep(EyeColor,48)
+Height = c(rep("A",4),rep("B",4),rep("C",4))
+Height = rep(Height,8)
 
 #Creating Table Data Set
 mytable = table(Survived,Sex,Age,EyeColor,Height)
