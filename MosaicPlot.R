@@ -1,7 +1,9 @@
+#installing vcd package
 install.packages("vcd")
+#loading vcd package 
 library("vcd")
-#Creating Data Set Categorical Variables manually
 
+#Creating Data Set Categorical Variables manually
 # Sex => M = Male, F=Female
 Sex <- c("F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M","F","F","M","M")
 # Itching in The Eye  => Yes = 1, No = 0
@@ -13,7 +15,7 @@ EyeColor <- c("Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","Br","Bl","
 # Danger from Cataract => Red - High, Yellow - Medium, Green - Low
 DangerCataract <- c("A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C","A","A","A","A","B","B","B","B","C","C","C","C")
 
-#Creating Data Set Categorical Variables using rep/simulating data in r
+#Creating Data Set Categorical Variables using rep/simulating data in R
 Sex <- c(rep("F",2),rep("M",2))
 Sex <- rep(Sex,24)
 EyeItching <- c(rep("1",48),rep("0",48))
