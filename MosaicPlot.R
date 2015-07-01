@@ -1,3 +1,4 @@
+install.packages("vcd")
 library("vcd")
 #Creating Data Set Categorical Variables manually
 
