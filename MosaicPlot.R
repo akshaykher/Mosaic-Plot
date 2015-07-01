@@ -21,7 +21,7 @@ Age <- rep(Age,2)
 EyeColor <- c("Bl","Br")
 EyeColor <- rep(EyeColor,48)
 DangerCataract = c(rep("A",4),rep("B",4),rep("C",4))
-DangerCataract = rep(Height,8)
+DangerCataract = rep(DangerCataract,8)
 
 #Creating Table Data Set
 mytable = table(EyeItching,Sex,Age,EyeColor,DangerCataract)
