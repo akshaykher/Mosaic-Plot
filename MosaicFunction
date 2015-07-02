@@ -41,7 +41,7 @@ mosaic_plot <- function (Population="500",SeedValue="1",InstallPackage="N",SaveP
   #Drawing Mosaic Plot
   #Frequency of each cell is labelled
   #Red = Low Population => Attention Needed, White = Moderate Population => Moderate Attention, Blue = High/Stable Population => No Attention Required
-  mosaic(ContingencyTable, gp = shading_Friendly, gp_args = list(interpolate = c(1)), compress=FALSE, gp_text=gpar(fontsize=12, fontfamily="serif"), labeling=labeling_values)
+  mosaic(ContingencyTable, gp = shading_Friendly, gp_args = list(interpolate = c(1)), compress=FALSE, gp_text=gpar(fontsize=12, fontfamily="serif"), labeling=labeling_values,main="Mosaic Plot Country Demographics",sub="Red = High Attention | White = Moderate Attention |  Green = Ignore")
   
   #Saving Plot in working directory
   #to check you working directory type : getwd()
