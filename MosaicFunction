@@ -1,4 +1,4 @@
-#This function draws a Mosaic Plot displaying demographics of a  country having a population of only blacks and whites
+#This function draws a Mosaic Plot displaying demographics of a country having a population of only blacks and whites
 
 #The arguments are :-
 #Total Population => Population (Default Population = 500)
