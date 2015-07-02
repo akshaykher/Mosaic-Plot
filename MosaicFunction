@@ -1,4 +1,4 @@
-#This function draws a Mosaic Plot displaying demographics of a country having a population of only blacks and whites
+#This function draws a Mosaic Plot displaying demographics of a country having population of only blacks and whites
 
 #The arguments are :-
 #Total Population => Population (Default Population = 500)
@@ -40,11 +40,11 @@ mosaic_plot <- function (Population="500",SeedValue="1",InstallPackage="N",SaveP
   
   #Drawing Mosaic Plot
   #Frequency of each cell is labelled
-  #Red = Low Population => Attention Needed, White = Moderate Population => Moderate Attention, Blue = High/Stable Population => No Attention Required
+  #Red = Low Population => Attention Needed, White = Medium Population => Moderate Attention, Blue = High/Stable Population => No Attention Required
   mosaic(ContingencyTable, gp = shading_Friendly, gp_args = list(interpolate = c(1)), compress=FALSE, gp_text=gpar(fontsize=12, fontfamily="serif"), labeling=labeling_values,main="Mosaic Plot - Country Demographics",sub="Red = High Attention | White = Moderate Attention |  Blue = Ignore")
   
   #Saving Plot in working directory
-  #to check you working directory type : getwd()
+  #to check your working directory type : getwd()
   #to change your working directory type : setwd("DirectoryName")
   if(SavePlot=="Y")
   {
