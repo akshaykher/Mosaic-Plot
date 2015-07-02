@@ -52,3 +52,9 @@ mosaic_plot <- function (Population="500",SeedValue="1",InstallPackage="N",SaveP
     dev.off()
   }
 }
+
+#How to call the function in RStudio
+#Save the function in the text editor ex: MosaicFunction.R
+#Type in Console
+#>source("MosaicFunction.R")
+#>mosaic_plot(600,5,"Y","Y","MyMosaicPlot")
