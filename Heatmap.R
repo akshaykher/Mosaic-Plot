@@ -28,7 +28,8 @@ CountTableDayHour$Hour = as.numeric(as.character(CountTableDayHour$Hour))
 # Fix the order of the days:
 CountTableDayHour$Day = factor(CountTableDayHour$Day, ordered=TRUE, levels=c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"))
 
-# Make a heatmap:
+# Make a heatmap using ggplot and geom_tile function:
+# It displays total number of Motor Vehicle Thefts in the city by day and hour of the week
 ggplot(CountTableDayHour, aes(x = Hour, y = Day)) + geom_tile(aes(fill = TotalThefts))
 
 # Change the label on the legend, get rid of the y-label and add title:
