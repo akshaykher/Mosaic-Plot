@@ -31,7 +31,7 @@ CountTableDayHour$Day = factor(CountTableDayHour$Day, ordered=TRUE, levels=c("Mo
 # Make a heatmap:
 ggplot(CountTableDayHour, aes(x = Hour, y = Day)) + geom_tile(aes(fill = TotalThefts))
 
-# Change the label on the legend, and get rid of the y-label:
+# Change the label on the legend, get rid of the y-label and add title:
 ggplot(CountTableDayHour, aes(x = Hour, y = Day)) + geom_tile(aes(fill = TotalThefts)) + scale_fill_gradient(name="Total MV Thefts") + theme(axis.title.y = element_blank()) + ggtitle("Total Motor Vehicles Thefts in NYC") + theme(plot.title = element_text(lineheight=.8, face="bold"))
 
 # Save the Plot to a png
