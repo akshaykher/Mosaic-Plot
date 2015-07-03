@@ -1,4 +1,4 @@
-# Load the grammar for grammic plot used for visualization :
+# Load the grammar for graphic plot used for visualization :
 library(ggplot2)
 
 # Load Data :
