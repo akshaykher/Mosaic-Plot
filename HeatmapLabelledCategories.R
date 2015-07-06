@@ -28,7 +28,7 @@ CountTableDayHour$Hour = as.numeric(as.character(CountTableDayHour$Hour))
 # Fix the order of the days:
 CountTableDayHour$Day = factor(CountTableDayHour$Day, ordered=TRUE, levels=c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"))
 
-CountTableDayHour$Categories = c(paste0("ABCDEFGHIJKLMN",1:168))
+CountTableDayHour$Categories = c(paste0("ABCDEFGHIJKL",1:168))
 
 # Plot the Heatmap
 ggplot(CountTableDayHour, aes(x = Day, y = Hour, fill = Categories)) +
