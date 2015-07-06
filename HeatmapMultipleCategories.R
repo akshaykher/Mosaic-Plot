@@ -48,7 +48,7 @@ dev.off()
 # Below is the Dataframe on which the plot is made
 # Thefts Column provides the frequencies which have been tagged to colour categories as High,Medium or Low
 #> CountTableDayHour
-#Day Hour TotalThefts Thefts
+#       Day       Hour  TotalThefts Thefts
 #1      Friday    0        1873    1/H
 #2      Monday    0        1900    1/H
 #3    Saturday    0        2050    1/H
