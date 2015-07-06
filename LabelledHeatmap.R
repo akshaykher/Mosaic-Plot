@@ -19,4 +19,8 @@ mymelt$Category = c("C01-AA","C02-AS","C03-AC","C04-AMA","C05-AMS","C06-AMC","C0
 #draw the labelled heatmap 
 ggplot(mymelt, aes(x = industry, y = variable, fill = Category)) +
   geom_tile() + geom_text(aes(fill = mymelt$Category, label = mymelt$Category))
+  
+#save the plot to a png
+dev.copy(png,file="labelledHeatmap.png)
+dev.off()
 
