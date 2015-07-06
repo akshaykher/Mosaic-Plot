@@ -3,7 +3,7 @@ library(ggplot2)
 
 # Load Data :
 # Link from which the data set was obtained - http://gis.chicagopolice.org/
-motor_vehicle_thefts = read.csv("mvt.csv", stringsAsFactors=FALSE)
+motor_vehicle_thefts = read.csv("mvthefts.csv", stringsAsFactors=FALSE)
 
 # Convert the Date variable to a format that R will recognize:
 motor_vehicle_thefts$Date = strptime(motor_vehicle_thefts$Date, format="%m/%d/%y %H:%M")
