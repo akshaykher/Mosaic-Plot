@@ -39,7 +39,7 @@ for(i in seq_len(nrow(CountTableDayHour)))
 
 # Plot the Heatmap
 ggplot(CountTableDayHour, aes(x = Day, y = Hour, fill = Thefts)) +
-  geom_tile() + geom_text(aes(fill = CountTableDayHour$TheftsLabel, label = CountTableDayHour$Thefts))
+  geom_tile(colour="black") + geom_text(aes(fill = CountTableDayHour$TheftsLabel, label = CountTableDayHour$Thefts))
 
 # Save the plot to a png
 dev.copy(png,"HeatmapMultipleCategories.png")
