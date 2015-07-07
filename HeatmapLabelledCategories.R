@@ -28,6 +28,7 @@ CountTableDayHour$Hour = as.numeric(as.character(CountTableDayHour$Hour))
 # Fix the order of the days:
 CountTableDayHour$Day = factor(CountTableDayHour$Day, ordered=TRUE, levels=c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"))
 
+# Name the categories to displayed inside the cells
 CountTableDayHour$Categories = c(paste0("ABCDEFGHIJKL",1:168))
 
 # Plot the Heatmap
